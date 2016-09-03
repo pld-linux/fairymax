@@ -7,8 +7,9 @@ License:	Free
 Group:		Applications/Games
 # 4.8S from web page
 #Source0:	http://hgm.nubati.net/fairymax.tar.gz
-# newer one from git
-Source0:	http://hgm.nubati.net/cgi-bin/gitweb.cgi?p=fairymax.git;a=snapshot;h=refs/tags/%{version};sf=tgz;dummy=/%{name}-%{version}.tar.gz
+# newer one from git; md5 changes on every get, so use distfiles to store
+#Source0:	http://hgm.nubati.net/cgi-bin/gitweb.cgi?p=fairymax.git;a=snapshot;h=refs/tags/%{version};sf=tgz;dummy=/%{name}-%{version}.tar.gz
+Source0:	%{name}-%{version}.tar.gz
 # Source0-md5:	c91855dc5ea5b38735fe8899794c1686
 URL:		http://home.hccnet.nl/h.g.muller/CVfairy.html
 BuildRequires:	perl-tools-pod
